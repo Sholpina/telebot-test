@@ -45,7 +45,7 @@ answers_other = ["merhaba", "gamarjoba"]
 def ans(message):
     t = time.ctime(time.time()).split()
     mess = message.text.lower()
-    if mess[-1] == '?':
+    if mess[-1] == '?' or "!":
         mess = mess[:-1]
     if mess in answers_ru or mess == '/start':
         ans = "Здравствуйте! Чем можем вам помочь?"
